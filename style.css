@@ -11,7 +11,7 @@ body {
 .hero {
   background: url('https://source.unsplash.com/1600x800/?corporate,consulting') no-repeat center center/cover;
   color: white;
-  text-align: center;
+  text-align: justify;
   padding: 180px 20px;
   position: relative;
 }
@@ -59,7 +59,7 @@ body {
 /* Navbar */
 .navbar {
   background: #0a1f44;
-  text-align: center;
+  text-align: justify;
   padding: 20px;
   position: sticky;
   top: 0;
@@ -92,7 +92,7 @@ body {
 h2 {
   color: #0a1f44;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: justify;
   font-size: 2.2em;
   font-weight: 700;
 }
@@ -113,7 +113,7 @@ h2 {
   min-width: 300px;
   max-width: 340px;
   transition: transform 0.3s ease;
-  text-align: center;
+  text-align: justify;
 }
 
 .card:hover {
