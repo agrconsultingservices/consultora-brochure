@@ -1,68 +1,101 @@
+/* Tipografía y base */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
   margin: 0;
-  background: #f9f9f9;
-  color: #333;
+  background: #ffffff;
+  color: #2c2c2c;
+  line-height: 1.6;
 }
 
+/* Hero con overlay */
 .hero {
-  background: url('https://source.unsplash.com/1600x600/?business,consulting') no-repeat center center/cover;
+  background: url('https://source.unsplash.com/1600x600/?corporate,consulting') no-repeat center center/cover;
   color: white;
   text-align: center;
-  padding: 120px 20px;
+  padding: 140px 20px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-text h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
+  font-size: 3.5em;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .hero-text p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  font-size: 1.4em;
+  margin-bottom: 25px;
 }
 
 .btn {
-  background: #0055a5;
+  background: #b8860b; /* dorado premium */
   color: white;
-  padding: 12px 25px;
+  padding: 14px 28px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 4px;
   font-weight: bold;
+  transition: background 0.3s ease;
 }
 
+.btn:hover {
+  background: #daa520;
+}
+
+/* Navbar */
 .navbar {
-  background: #003366;
+  background: #0a1f44; /* azul profundo */
   text-align: center;
-  padding: 15px;
+  padding: 18px;
 }
 
 .navbar a {
   color: white;
-  margin: 0 15px;
+  margin: 0 20px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
+.navbar a:hover {
+  color: #b8860b;
+}
+
+/* Secciones */
 .section {
-  padding: 60px 20px;
-  max-width: 1000px;
+  padding: 70px 20px;
+  max-width: 1100px;
   margin: auto;
 }
 
 .bg-light {
-  background: #eef2f5;
+  background: #f4f6f9;
 }
 
 h2 {
-  color: #003366;
-  margin-bottom: 20px;
+  color: #0a1f44;
+  margin-bottom: 25px;
   text-align: center;
+  font-size: 2em;
+  font-weight: 700;
 }
 
+/* Cards de servicios */
 .cards {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -70,16 +103,44 @@ h2 {
 .card {
   flex: 1;
   background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   min-width: 280px;
-  max-width: 300px;
+  max-width: 320px;
+  transition: transform 0.3s ease;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #b8860b;
+  margin-bottom: 15px;
+}
+
+/* Contacto */
+#contacto p {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+#contacto a {
+  color: #0a1f44;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contacto a:hover {
+  color: #b8860b;
+}
+
+/* Footer */
 footer {
-  background: #003366;
+  background: #0a1f44;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
+  font-size: 0.9em;
 }
