@@ -1,3 +1,4 @@
+/* Tipografía y base */
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -6,11 +7,12 @@ body {
   line-height: 1.7;
 }
 
+/* Hero */
 .hero {
-  background: url('https://source.unsplash.com/1600x600/?business,corporate') no-repeat center center/cover;
+  background: url('https://source.unsplash.com/1600x800/?corporate,consulting') no-repeat center center/cover;
   color: white;
   text-align: center;
-  padding: 160px 20px;
+  padding: 180px 20px;
   position: relative;
 }
 
@@ -18,7 +20,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(10,31,68,0.7); /* overlay azul profundo */
+  background: rgba(10,31,68,0.65); /* overlay azul premium */
 }
 
 .hero-text {
@@ -28,16 +30,21 @@ body {
 
 .hero-text h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.8em;
+  font-size: 4em;
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
 
+.hero-text p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
 .btn {
-  background: #b8860b;
+  background: #b8860b; /* dorado premium */
   color: white;
-  padding: 14px 32px;
+  padding: 16px 36px;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
@@ -49,17 +56,19 @@ body {
   transform: scale(1.05);
 }
 
+/* Navbar */
 .navbar {
   background: #0a1f44;
   text-align: center;
-  padding: 18px;
+  padding: 20px;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .navbar a {
   color: white;
-  margin: 0 20px;
+  margin: 0 25px;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
@@ -69,43 +78,75 @@ body {
   color: #b8860b;
 }
 
+/* Secciones */
 .section {
-  padding: 80px 20px;
+  padding: 90px 20px;
   max-width: 1200px;
   margin: auto;
 }
 
+.bg-light {
+  background: #f4f6f9;
+}
+
+h2 {
+  color: #0a1f44;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+/* Cards */
 .cards {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
-  background: #f4f6f9;
-  padding: 30px;
+  background: white;
+  padding: 40px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  min-width: 280px;
-  max-width: 320px;
+  min-width: 300px;
+  max-width: 340px;
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 }
 
 .card h3 {
-  color: #0a1f44;
-  margin-bottom: 15px;
-  font-family: 'Lato', sans-serif;
+  color: #b8860b;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* Contacto */
+#contacto p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#contacto a {
+  color: #0a1f44;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contacto a:hover {
+  color: #b8860b;
+}
+
+/* Footer */
 footer {
   background: #0a1f44;
   color: white;
   text-align: center;
-  padding: 30px;
+  padding: 35px;
   font-size: 0.95em;
 }
