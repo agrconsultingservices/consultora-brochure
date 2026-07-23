@@ -5,41 +5,66 @@ body {
   color: #333;
 }
 
-header {
-  background: linear-gradient(135deg, #003366, #0055a5);
+.hero {
+  background: url('https://source.unsplash.com/1600x600/?business,consulting') no-repeat center center/cover;
   color: white;
-  padding: 60px;
   text-align: center;
+  padding: 120px 20px;
 }
 
-nav {
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
   background: #0055a5;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.navbar {
+  background: #003366;
   text-align: center;
   padding: 15px;
 }
 
-nav a {
+.navbar a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
-section {
-  padding: 40px;
+.section {
+  padding: 60px 20px;
   max-width: 1000px;
   margin: auto;
+}
+
+.bg-light {
+  background: #eef2f5;
 }
 
 h2 {
   color: #003366;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .cards {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -48,7 +73,8 @@ h2 {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  min-width: 250px;
+  min-width: 280px;
+  max-width: 300px;
 }
 
 footer {
@@ -56,5 +82,4 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
 }
