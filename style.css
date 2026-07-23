@@ -10,7 +10,7 @@ body {
 /* Hero con overlay */
 .hero {
   background: url('https://source.unsplash.com/1600x600/?corporate,consulting') no-repeat center center/cover;
-  color: white;
+  color: black;
   text-align: center;
   padding: 140px 20px;
   position: relative;
